@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.kreandos.androidapp.kmatrona_free"
+    android:versionCode="5"
+    android:versionName="1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+		android:theme="@android:style/Theme.Light.NoTitleBar"         >
+        <activity
+            android:name="es.kreandos.androidapp.kmatrona_free.main.InicioSSplash"
+            android:theme="@style/Theme.Transparent"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="es.kreandos.androidapp.kmatrona_free.main.Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="es.kreandos.androidapp.kmatrona_free.main.Historia"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity 
+            android:name="es.kreandos.androidapp.kmatrona_free.main.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="es.kreandos.androidapp.kmatrona_free.main.RegistroActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity 
+            android:name="es.kreandos.androidapp.kmatrona_free.naegele.NaegeleActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity 
+            android:name="es.kreandos.androidapp.kmatrona_free.naegele.NaegeleActivityCalculos"
+            android:screenOrientation="portrait"
+            />
+        <activity 
+            android:name="es.kreandos.androidapp.kmatrona_free.main.MainActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity 
+            android:name="es.kreandos.androidapp.kmatrona_free.main.TareasSQLiteActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="es.kreandos.androidapp.kmatrona_free.database.UsuariosBD"
+            android:screenOrientation="portrait"
+            />
+        </application>
+    
+</manifest>
